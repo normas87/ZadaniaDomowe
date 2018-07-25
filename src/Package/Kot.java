@@ -11,6 +11,10 @@ class Kot extends Zwierze {
     @Override
     public void introduce() {
         System.out.println("Jestem kotem");
-
     }
+
+    // Zadanie 3
+   RasyKotow rasa = RasyKotow.DACHOWIEC;
+ //   RasyKotow rasa;
+
 }

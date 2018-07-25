@@ -11,6 +11,8 @@ class Pies extends Zwierze {
     @Override
     public void introduce() {
         System.out.println("Jestem psem");
-
     }
+
+    // Zadanie 3
+    RasyPsow rasa = RasyPsow.DOBERMAN;
 }
