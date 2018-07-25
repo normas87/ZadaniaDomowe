@@ -17,6 +17,8 @@ public class Main {
         stefcio.introduce();
 
 
+Czlowiek wiesiek = new Czlowiek("Wiesiek","Kowalski");
+        System.out.println(wiesiek);
 
 
 

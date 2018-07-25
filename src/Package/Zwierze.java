@@ -1,6 +1,6 @@
 package Package;
 
-class Zwierze {
+public class Zwierze {
 
     //Stworzyć klasę Zwierzę, która będzie zawierała pola: (String)imię, (Integer)wiek.
     String imie;

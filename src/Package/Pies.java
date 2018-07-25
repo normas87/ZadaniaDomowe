@@ -7,6 +7,7 @@ class Pies extends Zwierze {
         super(name, age);
     }
 
+
     // Zadanie 2
     @Override
     public void introduce() {
