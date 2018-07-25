@@ -1,16 +1,16 @@
 package Package;
 
-// Stworzyć klasę Pies i Kot, które będą dziedziczyły po klasie Zwierze.
 class Pies extends Zwierze {
+// Stworzyć klasę Pies i Kot, które będą dziedziczyły po klasie Zwierze.
 
     public Pies(String name, Integer age) {
         super(name, age);
     }
 
+    // Zadanie 2
     @Override
-    public introduce() {
-        System.out.println("Jestem Psem");
-
+    public void introduce() {
+        System.out.println("Jestem psem");
 
     }
 }
