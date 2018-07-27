@@ -17,9 +17,10 @@ public class Main {
         stefcio.introduce();
 
 
-Czlowiek wiesiek = new Czlowiek("Wiesiek","Kowalski");
-        System.out.println(wiesiek);
+        Czlowiek wiesiek = new Czlowiek("Wiesiek", "Kowalski");
+        wiesiek.setZwierze(wladek);
 
+        System.out.println(wiesiek);
 
 
     }

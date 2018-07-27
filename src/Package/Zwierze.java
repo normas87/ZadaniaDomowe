@@ -17,11 +17,4 @@ public class Zwierze {
         System.out.println("Jestem zwierze");
     }
 
-    @Override
-    public String toString() {
-        return "Zwierze: " +
-                "imie = " + imie +
-                ", wiek = " + wiek +
-                ' ';
     }
-}

@@ -15,5 +15,20 @@ public class Czlowiek {
     public void przedstawSie() {
         System.out.println("Cześć, nazywam się " + imie + nazwisko);
     }
-}
+
+    public Zwierze getZwierze() {
+        return zwierze;
+    }
+
+    public void setZwierze(Zwierze zwierze) {
+        this.zwierze = zwierze;
+    }
+
+
+
+
+
+    }
+
+
 
