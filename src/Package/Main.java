@@ -5,22 +5,28 @@ public class Main {
 
 //​ Klasy i dziedziczenie
 // Zadanie 1
+        //W metodzie main stworzyć jeden obiekt klasy Pies i jeden obiekt klasy Kot i wypisać je na ekran
+        Pies wladek = new Pies();
+        wladek.Zwierze("Władek", 43);
+        System.out.println("Pies: " + wladek);
 
-        Pies wladek = new Pies("Władysław", 32);
-        System.out.println(wladek);
-        // Zadanie 2
+        Kot stefcio = new Kot();
+        stefcio.Zwierze("Stefcio", 32);
+        System.out.println("Kot: " + stefcio);
+
+// Zadanie 2
+        // W metodzie main wywołać dla Psa i Kota tą metodę, którą stworzyliśmy
         wladek.introduce();
-
-        Kot stefcio = new Kot("Stefan", 53);
-        System.out.println(stefcio);
-        // Zadanie 2
         stefcio.introduce();
+
 
 
         Czlowiek wiesiek = new Czlowiek("Wiesiek", "Kowalski");
         wiesiek.setZwierze(wladek);
 
-        System.out.println(wiesiek);
+        wiesiek.przedstawSie();
+        System.out.println("====================");
+        wiesiek.przedstawSie(" i kocham zwierzęta");
 
 
     }

@@ -1,6 +1,7 @@
 package Package;
-
+//Zadanie 4
 public class DaneAdresowe {
-    String adres, numerTelefonu, mail;
+    String adres, mail;
+    double telefon;
 
 }

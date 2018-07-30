@@ -8,12 +8,16 @@ public class Czlowiek {
     DaneAdresowe daneAdresowe;
 
     public Czlowiek(String name, String surname) {
-        name = imie;
-        surname = nazwisko;
+        imie = name;
+        nazwisko = surname;
     }
 
+   //Zadanie 5)
     public void przedstawSie() {
-        System.out.println("Cześć, nazywam się " + imie + nazwisko);
+        System.out.println("Cześć, nazywam się " + imie +" "+ nazwisko);
+    }
+    public void przedstawSie(String loveAnimals){
+        System.out.println("Cześć, nazywam się " + imie +" "+ nazwisko + loveAnimals);
     }
 
     public Zwierze getZwierze() {
@@ -25,10 +29,7 @@ public class Czlowiek {
     }
 
 
-
-
-
-    }
+}
 
 
 
