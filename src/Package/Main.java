@@ -106,7 +106,7 @@ public class Main {
         Ksiazka book_10 = new Ksiazka("Tytuł_10", "Nikola", "IPN", 260);
         Ksiazka book_11 = new Ksiazka("Tytuł_11", "Vanessa", "IPN", 155);
 
-        List<Object> listaKsiazek = new ArrayList<Object>();
+List<Object> listaKsiazek = new ArrayList<Object>();
         listaKsiazek.add(book_01);
         listaKsiazek.add(book_02);
         listaKsiazek.add(book_03);
@@ -119,6 +119,8 @@ public class Main {
         listaKsiazek.add(book_10);
         listaKsiazek.add(book_11);
 
+List<Object> listaObszernychKsiazek = new ArrayList<>();
+
         for (Object x : listaKsiazek) {
             //wyświetlamy wszystkie elementy za pomocą System.out.println
             System.out.println(x);
@@ -126,61 +128,57 @@ public class Main {
         //Usuwamy środkowy element listy
         listaKsiazek.remove((listaKsiazek.size()) / 2);
 
-        System.out.println("==============================================================");
+        System.out.println("===========================Bez środkowej pozycji===================================");
         //Wyświetlamy wszystkie elementy za pomocą System.out.println(...)
         for (Object y : listaKsiazek) {
             System.out.println(y);
         }
 
-        System.out.println("==================");
+        System.out.println("===================================================================================");
         //Wyświetlamy wielkość listy
         System.out.println("Wielkość listy to: " + listaKsiazek.size());
 
-        System.out.println("==================");
+        System.out.println("===================================================================================");
         System.out.println("Lista książek powyżej 200 stron: ");
 
+
         for (Object z : listaKsiazek) {
-            List<Object> listaDuzychKsiazek = new ArrayList<Object>();
             int strony = 200;
+
             if (book_01.liczbaStron > strony) {
-                listaDuzychKsiazek.add(z);
+                listaObszernychKsiazek.add(z);
             }
             if (book_02.liczbaStron > strony) {
-                listaDuzychKsiazek.add(z);
+                listaObszernychKsiazek.add(z);
             }
             if (book_03.liczbaStron > strony) {
-                listaDuzychKsiazek.add(z);
+                listaObszernychKsiazek.add(z);
             }
             if (book_04.liczbaStron > strony) {
-                listaDuzychKsiazek.add(z);
+                listaObszernychKsiazek.add(z);
             }
             if (book_05.liczbaStron > strony) {
-                listaDuzychKsiazek.add(z);
+                listaObszernychKsiazek.add(z);
             }
             if (book_06.liczbaStron > strony) {
-                listaDuzychKsiazek.add(z);
+                listaObszernychKsiazek.add(z);
             }
             if (book_07.liczbaStron > strony) {
-                listaDuzychKsiazek.add(z);
+                listaObszernychKsiazek.add(z);
             }
             if (book_08.liczbaStron > strony) {
-                listaDuzychKsiazek.add(z);
+                listaObszernychKsiazek.add(z);
             }
             if (book_09.liczbaStron > strony) {
-                listaDuzychKsiazek.add(z);
+                listaObszernychKsiazek.add(z);
             }
             if (book_10.liczbaStron > strony) {
-                listaDuzychKsiazek.add(z);
+                listaObszernychKsiazek.add(z);
             }
             if (book_11.liczbaStron > strony) {
-                listaDuzychKsiazek.add(z);
+                listaObszernychKsiazek.add(z);
             }
-
             System.out.println(z);
         }
     }
 }
-
-
-
-
