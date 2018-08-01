@@ -105,8 +105,13 @@ public class Main {
         Ksiazka book_09 = new Ksiazka("Tytuł_09", "Brajan", "IPN", 150);
         Ksiazka book_10 = new Ksiazka("Tytuł_10", "Nikola", "IPN", 260);
         Ksiazka book_11 = new Ksiazka("Tytuł_11", "Vanessa", "IPN", 155);
+//Zadanie 9
+        Ksiazka book_12 = new Ksiazka("Tytuł_12", "Vanessa", "IPN", 160);
+        Ksiazka book_13 = new Ksiazka("Tytuł_13", "Vanessa", "IPN", 185);
+        Ksiazka book_14 = new Ksiazka("Tytuł_14", "Vanessa", "IPN", 173);
+        Ksiazka book_15 = new Ksiazka("Tytuł_15", "Vanessa", "IPN", 25);
 
-List<Object> listaKsiazek = new ArrayList<Object>();
+List<Ksiazka> listaKsiazek = new ArrayList<Ksiazka>();
         listaKsiazek.add(book_01);
         listaKsiazek.add(book_02);
         listaKsiazek.add(book_03);
@@ -119,9 +124,10 @@ List<Object> listaKsiazek = new ArrayList<Object>();
         listaKsiazek.add(book_10);
         listaKsiazek.add(book_11);
 
-List<Object> listaObszernychKsiazek = new ArrayList<>();
 
-        for (Object x : listaKsiazek) {
+List<Ksiazka> listaObszernychKsiazek = new ArrayList<>();
+
+        for (Ksiazka x : listaKsiazek) {
             //wyświetlamy wszystkie elementy za pomocą System.out.println
             System.out.println(x);
         }
@@ -130,7 +136,7 @@ List<Object> listaObszernychKsiazek = new ArrayList<>();
 
         System.out.println("===========================Bez środkowej pozycji===================================");
         //Wyświetlamy wszystkie elementy za pomocą System.out.println(...)
-        for (Object y : listaKsiazek) {
+        for (Ksiazka y : listaKsiazek) {
             System.out.println(y);
         }
 
@@ -141,8 +147,7 @@ List<Object> listaObszernychKsiazek = new ArrayList<>();
         System.out.println("===================================================================================");
         System.out.println("Lista książek powyżej 200 stron: ");
 
-
-        for (Object z : listaKsiazek) {
+        for (Ksiazka z : listaKsiazek) {
             int strony = 200;
 
             if (book_01.liczbaStron > strony) {
@@ -178,7 +183,28 @@ List<Object> listaObszernychKsiazek = new ArrayList<>();
             if (book_11.liczbaStron > strony) {
                 listaObszernychKsiazek.add(z);
             }
-            System.out.println(z);
+          System.out.println(z);
         }
+
+        //Zadanie 9
+        //Tworzymy drugą listę która będzie również zawierać książki
+        List<Ksiazka> listaKsiazek02 = new ArrayList<Ksiazka>();
+        //Dodajemy do tej listy 4 obiekty klasy Książka
+        listaKsiazek.add(book_12);
+        listaKsiazek.add(book_13);
+        listaKsiazek.add(book_14);
+        listaKsiazek.add(book_15);
+
+        System.out.println("===================================================================================");
+        List<Ksiazka> listyPolaczone = new ArrayList<Ksiazka>();
+        listyPolaczone.addAll(listaKsiazek);
+        listyPolaczone.addAll(listaKsiazek02);
+
+        //Wyświetlamy wielkość listy
+        System.out.println(listyPolaczone.size());
+
+        //Wyświetlamy wszystkie elementy listy.
+        for (Ksiazka i : listyPolaczone)
+        System.out.println(i);
     }
 }
