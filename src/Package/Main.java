@@ -206,5 +206,6 @@ List<Ksiazka> listaObszernychKsiazek = new ArrayList<>();
         //Wyświetlamy wszystkie elementy listy.
         for (Ksiazka i : listyPolaczone)
         System.out.println(i);
+        
     }
 }
