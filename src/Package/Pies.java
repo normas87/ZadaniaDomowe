@@ -13,5 +13,8 @@ class Pies extends Zwierze {
 
     // Zadanie 3
     //Do klasy Pies dodać dodać pole rasa, które będzie zawierało Enum przygotowany dla psa.
+    //TODO pola powinny być prywatne
+    //TODO rasa pas powinna być ustawaiana przy tworzeniu obiektu tej klasy.
+    //TODO brak konstruktora
     RasyPsow rasa = RasyPsow.DOBERMAN;
 }

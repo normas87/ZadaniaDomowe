@@ -5,6 +5,7 @@ public class Ksiazka {
     // Zadanie 8)
     // Tworzymy klasę Książka, która będzie zawierała pola tytuł, autor, liczba stron, wydawnictwo.
 
+    //TODO pola powinny być prywatne
     String tytul, autor, wydawnictwo;
     int liczbaStron;
 

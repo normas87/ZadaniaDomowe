@@ -3,6 +3,7 @@ package Package;
 class Zwierze {
     // Zadanie 1
     // - Stworzyć klasę Zwierzę, która będzie zawierała pola: (String)imię, (Integer)wiek.
+    //TODO pola powinny być prywatne
     String imie;
     Integer wiek;
 
