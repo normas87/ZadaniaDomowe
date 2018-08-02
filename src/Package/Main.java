@@ -148,9 +148,11 @@ List<Ksiazka> listaObszernychKsiazek = new ArrayList<>();
         System.out.println("Lista książek powyżej 200 stron: ");
 
         for (Ksiazka z : listaKsiazek) {
+
+            //TODO ale czemu tak ?
             int strony = 200;
 
-            if (book_01.liczbaStron > strony) {
+/*            if (book_01.liczbaStron > strony) {
                 listaObszernychKsiazek.add(z);
             }
             if (book_02.liczbaStron > strony) {
@@ -182,9 +184,15 @@ List<Ksiazka> listaObszernychKsiazek = new ArrayList<>();
             }
             if (book_11.liczbaStron > strony) {
                 listaObszernychKsiazek.add(z);
-            }
+            }*/
           System.out.println(z);
+
+            //TODO można zrobić to tak
+            if(z.liczbaStron >strony){
+                listaObszernychKsiazek.add(z);
+            }
         }
+        System.out.println(listaObszernychKsiazek);
 
         //Zadanie 9
         //Tworzymy drugą listę która będzie również zawierać książki
