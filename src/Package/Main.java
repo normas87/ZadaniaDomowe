@@ -185,7 +185,7 @@ List<Ksiazka> listaObszernychKsiazek = new ArrayList<>();
             if (book_11.liczbaStron > strony) {
                 listaObszernychKsiazek.add(z);
             }*/
-          System.out.println(z);
+         // System.out.println(z);
 
             //TODO można zrobić to tak
             if(z.liczbaStron >strony){
