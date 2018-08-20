@@ -1,4 +1,4 @@
-package Package;
+package company.com;
 import java.util.*;
 
 public class Ksiazka {
@@ -6,7 +6,7 @@ public class Ksiazka {
     // Tworzymy klasę Książka, która będzie zawierała pola tytuł, autor, liczba stron, wydawnictwo.
 
     //TODO pola powinny być prywatne
-    String tytul, autor, wydawnictwo;
+   private String tytul, autor, wydawnictwo;
     int liczbaStron;
 
 

@@ -1,4 +1,4 @@
-package Package;
+package company.com;
 
 class Zwierze {
     // Zadanie 1

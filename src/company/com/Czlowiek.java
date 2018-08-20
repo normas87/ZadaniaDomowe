@@ -1,11 +1,27 @@
-package Package;
+package company.com;
 
 public class Czlowiek {
 
     //Zadanie 4
     //Stworzyć klasę Człowiek, która będzie zawierała pola, imię, nazwisko
     //TODO pola powinny być prywatne
-    String imie, nazwisko;
+    private String imie, nazwisko;
+
+    public String getImie() {
+        return imie;
+    }
+
+    public void setImie(String imie) {
+        this.imie = imie;
+    }
+
+    public String getNazwisko() {
+        return nazwisko;
+    }
+
+    public void setNazwisko(String nazwisko) {
+        this.nazwisko = nazwisko;
+    }
 
 
     //Klasa człowiek powinna zawierać konstruktor publiczny, który będzie przyjmował wszystkie pola jako argumenty
@@ -19,9 +35,16 @@ public class Czlowiek {
     // - pole zwierzę, które będzie typu Zwierzę
     // - pole dane adresowe, które będzie typu Dane Adresowe
 
-    //TODO pola powinny być prywatne
-    Zwierze zwierze;                    //wiem że w dobrej praktyce wszystkie pola powinny być u góry ale dla czytelności czy wszystkie polecenia zrobiłem układam kod według klejności jak idą polecenia w zadaniu
-    DaneAdresowe daneAdresowe;
+    private Zwierze zwierze;                    //wiem że w dobrej praktyce wszystkie pola powinny być u góry ale dla czytelności czy wszystkie polecenia zrobiłem układam kod według klejności jak idą polecenia w zadaniu
+    private DaneAdresowe daneAdresowe;
+
+    public DaneAdresowe getDaneAdresowe() {
+        return daneAdresowe;
+    }
+
+    public void setDaneAdresowe(DaneAdresowe daneAdresowe) {
+        this.daneAdresowe = daneAdresowe;
+    }
 
     public Zwierze getZwierze() {
         return zwierze;

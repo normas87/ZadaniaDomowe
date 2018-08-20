@@ -1,4 +1,4 @@
-package Package;
+package company.com;
 
 class Pies extends Zwierze {
     // Zadanie 1
@@ -13,8 +13,15 @@ class Pies extends Zwierze {
 
     // Zadanie 3
     //Do klasy Pies dodać dodać pole rasa, które będzie zawierało Enum przygotowany dla psa.
+
     //TODO pola powinny być prywatne
-    //TODO rasa pas powinna być ustawaiana przy tworzeniu obiektu tej klasy.
+    private RasyPsow rasa;
+    public RasyPsow getRasa() {return rasa; }
+    public void setRasa(RasyPsow rasa) {this.rasa = rasa;}
+
     //TODO brak konstruktora
-    RasyPsow rasa = RasyPsow.DOBERMAN;
+    Pies (RasyPsow rasa){};
+
+    //TODO rasa pas powinna być ustawaiana przy tworzeniu obiektu tej klasy.
+    //  jest w main 11 linijka
 }
